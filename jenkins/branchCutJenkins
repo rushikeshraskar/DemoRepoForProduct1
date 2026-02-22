@@ -34,7 +34,7 @@ stage('Cut Release Branch') {
         git config user.email "jenkins@ci.local"
 
         # Inject credentials into remote
-        git remote set-url origin https://${GIT_USER}:${GIT_TOKEN}@github.com/rushikeshraskar/spring-auth-app.git
+        git remote set-url origin https://${GIT_USER}:${GIT_TOKEN}@github.com/rushikeshraskar/DemoRepoForProduct1.git
 
         chmod +x scripts/cut-release.sh
         ./scripts/cut-release.sh ${BASE_BRANCH} ${NEW_BRANCH} ${CURRENT_VERSION} ${NEW_VERSION}
