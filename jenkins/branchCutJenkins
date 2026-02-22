@@ -17,7 +17,7 @@ pipeline {
     stage('Checkout Base Branch') {
       steps {
         git branch: "${params.BASE_BRANCH}",
-            url: 'https://github.com/rushikeshraskar/spring-auth-app.git/',
+            url: 'https://github.com/rushikeshraskar/DemoRepoForProduct1.git/',
             credentialsId: 'f97287c6-60a4-439b-ad3e-d8afbec1ffd7'
       }
     }
