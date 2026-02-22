@@ -38,6 +38,7 @@ git branch
 
 echo "🌱 Creating new branch: $NEW_BRANCH"
 git checkout -b $NEW_BRANCH
+git pull
 
 if [ -n "$CURRENT_VERSION" ] && [ -n "$NEW_VERSION" ]; then
   echo "🔁 Replacing version occurrences in pom.xml files: $CURRENT_VERSION -> $NEW_VERSION"
